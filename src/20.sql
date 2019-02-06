@@ -1,0 +1,5 @@
+-- Write a query to display the invoice number, line numbers, product SKUs,
+-- product descriptions, and brand ID for sales of sealer and top coat products
+-- of the same brand on the same invoice with the sealer information appearing
+-- before top coat. Sort the results by invoice number, sealer line number, and
+-- top coat line number in ascending order. (Problem 8.22)

@@ -1,0 +1,4 @@
+-- Write a query to display the employee number, first name, last name, and
+-- largest salary amount for each employee in department 200. Sort the output
+-- by largest salary in descending order and employee number in ascending
+-- order. (Problem 7.57)

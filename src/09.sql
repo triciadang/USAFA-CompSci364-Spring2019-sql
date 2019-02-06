@@ -1,0 +1,4 @@
+-- Write a query to display the employee number, last name, first name, salary
+-- "from" date, salary end date, and salary amount for employees 83731, 83745,
+-- and 84039. Sort the output by employee number and salary "from" date.
+-- (Problem 7.48)

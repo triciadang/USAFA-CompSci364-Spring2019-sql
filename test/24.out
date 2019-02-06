@@ -1,0 +1,13 @@
+    brand_name     | brand_type |    AVERAGE PRICE    | UNITS SOLD 
+-------------------+------------+---------------------+------------
+ BINDER PRIME      | PREMIUM    | 16.1159259259259259 |       3753
+ BUSTERS           | VALUE      | 22.5860000000000000 |       3727
+ FORESTERS BEST    | VALUE      | 20.9433333333333333 |       2086
+ HOME COMFORT      | CONTRACTOR | 21.7955555555555556 |       4842
+ LE MODE           | PREMIUM    | 19.2205555555555556 |       5284
+ LONG HAUL         | CONTRACTOR | 20.1192682926829268 |       5728
+ OLDE TYME QUALITY | CONTRACTOR | 18.3307407407407407 |       3614
+ STUTTENFURST      | CONTRACTOR | 16.4677777777777778 |       3671
+ VALU-MATTE        | VALUE      | 16.8400000000000000 |       2485
+(9 rows)
+

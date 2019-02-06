@@ -1,0 +1,4 @@
+-- Write a query to display the employee number, last name, email address,
+-- title, and department name of each employee who job title ends in the word
+-- "ASSOCIATE." Sort the output by department name, employee title, and
+-- employee number. (Problem 7.50)

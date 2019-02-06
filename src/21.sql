@@ -1,0 +1,6 @@
+-- The Binder Prime Company wants to recognize the employee who sold the most
+-- of its products during a specified period. Write a query to display the
+-- employee number, employee first name, employee last name, email address, and
+-- total units sold for the employee who sold the most Binder Prime products
+-- between Novemeber 1, 2015, and December 5, 2015. If there is a a tie for
+-- most units sold, sort the output by employee last name. (Problem 8.23)

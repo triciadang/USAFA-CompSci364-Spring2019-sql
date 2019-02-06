@@ -1,0 +1,2 @@
+-- Having created the table structure in the prior problem, write the SQL code
+-- to enter the first two rows for the following table. (Problem 7.2)

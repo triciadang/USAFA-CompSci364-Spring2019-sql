@@ -1,0 +1,4 @@
+-- Write a query to display the first name, last name, phone number, title, and
+-- department number of employees who work in department 300 or have the title
+-- "CLERK I." Sort the output by last name and then by first name. (Problem
+-- 7.47)

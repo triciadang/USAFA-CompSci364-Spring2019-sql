@@ -1,0 +1,8 @@
+-- One of the purchasing managers is interested in the impact of product prices
+-- on the sale of products of each brand. Write a query to display the brand
+-- name, brand type, average price of products of each brand, and total units
+-- sold of products of each brand. Even if a product has been sold more than
+-- once, its price should only be included once in the calculation of the
+-- average price. However, you must be careful because multiple products of the
+-- same brand can have the same price, and each of those products must be
+-- included in the calculation of the brand's average price. (Problem 8.26)

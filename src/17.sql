@@ -1,0 +1,4 @@
+-- Write a query to display the customer code, first name, last name, and sum
+-- of all invoice totals for customers with cumulative invoice totals greater
+-- than $1,500. Sort the output by the sum of invoice totals in descending
+-- order. (Problem 7.58)

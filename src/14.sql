@@ -1,0 +1,2 @@
+-- Write a query to display the number of products within each base and type
+-- combination. Sort the results by product base and type. (Problem 7.53)

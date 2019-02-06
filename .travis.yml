@@ -1,0 +1,16 @@
+language: generic
+
+services:
+  - postgresql
+
+before_install:
+  - sudo apt-get install --yes colordiff
+
+before_script:
+  - psql --command='CREATE DATABASE "Ch07_ConstructCo";' -U postgres
+  - psql --dbname='Ch07_ConstructCo' --file='Ch07_ConstructCo_PostgreSQL.sql' --quiet -U postgres
+  - psql --command='CREATE DATABASE "Ch07_LargeCo";' -U postgres
+  - psql --dbname='Ch07_LargeCo' --file='Ch07_LargeCo_PostgreSQL.sql' --quiet -U postgres
+
+script:
+  - ./run.sh

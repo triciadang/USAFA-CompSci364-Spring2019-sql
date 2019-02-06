@@ -1,0 +1,3 @@
+-- Write a query to display the brand ID, brand name, brand type, and average
+-- price of products for the brand that has the largest average product price.
+-- (Problem 7.63)

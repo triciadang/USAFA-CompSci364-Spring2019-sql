@@ -1,0 +1,2 @@
+-- Write a query to display the number of products in each category that have a
+-- water base. Sort the results by product category. (Problem 7.52)
