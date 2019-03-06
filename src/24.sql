@@ -6,3 +6,28 @@
 -- average price. However, you must be careful because multiple products of the
 -- same brand can have the same price, and each of those products must be
 -- included in the calculation of the brand's average price. (Problem 8.26)
+
+WITH distinctbrandbuys AS (
+	SELECT DISTINCT LGBRAND.BRAND_ID
+	FROM LGBRAND
+),
+brandprice AS (
+	SELECT distinctbrandbuys.BRAND_ID, LGPRODUCT.PROD_PRICE
+	FROM distinctbrandbuys right join LGPRODUCT on distinctbrandbuys.BRAND_ID = LGPRODUCT.BRAND_ID
+	),
+sumqty AS (
+	SELECT LGBRAND.BRAND_ID, SUM(LGLINE.LINE_QTY) AS sum
+	FROM LGBRAND, LGPRODUCT, LGLINE
+	WHERE LGBRAND.BRAND_ID = LGPRODUCT.BRAND_ID
+	AND LGPRODUCT.PROD_SKU = LGLINE.PROD_SKU
+	GROUP BY LGBRAND.BRAND_ID,LGBRAND.BRAND_NAME, LGBRAND.BRAND_TYPE
+)
+
+SELECT LGBRAND.BRAND_NAME, LGBRAND.BRAND_TYPE, AVG(brandprice.PROD_PRICE), sumqty.sum
+FROM LGBRAND, LGPRODUCT, LGLINE, brandprice, sumqty
+WHERE LGBRAND.BRAND_ID = LGPRODUCT.BRAND_ID
+AND	brandprice.BRAND_ID = LGBRAND.BRAND_ID
+AND sumqty.BRAND_ID = brandprice.BRAND_ID
+AND LGLINE.PROD_SKU = LGPRODUCT.PROD_SKU
+GROUP BY LGBRAND.BRAND_NAME, LGBRAND.BRAND_TYPE, sumqty.sum
+ORDER BY LGBRAND.BRAND_NAME;
